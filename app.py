@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Enable CORS for all routes
-CORS(app)
+CORS(app, resources={r"/upload": {"origins": "http://localhost:5173"}})
 
 # Set upload folder and allowed file extensions
 app.config['UPLOAD_FOLDER'] = 'uploads/'
