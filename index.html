@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Text Selector</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Upload and Select Text from PDF</h1>
+    <form id="uploadForm">
+        <input type="file" id="pdfFile" name="file" accept="application/pdf" required>
+        <button type="submit">Upload</button>
+    </form>
+    <div id="pdfContainer"></div>
+    <textarea id="selectedText" placeholder="Selected text will appear here"></textarea>
+    <script src="/static/js/pdf-selector.js"></script>
+</body>
+</html>
